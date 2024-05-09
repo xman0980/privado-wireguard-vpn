@@ -10,7 +10,7 @@ I've written some scripts to pull down the credentials so that you can get the w
 Get the code
 
 ```
-git clone https://github.com/hongkongkiwi/privado-wireguard-vpn.git
+git clone https://github.com/xman0980/privado-wireguard-vpn.git
 cd privado-wireguard-vpn
 ```
 
@@ -88,6 +88,6 @@ If you want a simple script to pull a config and do all the steps you can run th
 If you want to use a linuxserver docker, you can override the entrypoint so you don't have to make your own custom docker. Obviously you'll need to add more environment variables for this to work properly but it's just an example
 
 ```
-git clone https://github.com/hongkongkiwi/privado-wireguard-vpn.git
+git clone https://github.com/xman0980/privado-wireguard-vpn.git
 docker run --rm -v $PWD/privado-vpn-wireguard:/opt/privado-vpn-wireguard -e PRIVADO_VPN_SERVERS="US" --entrypoint "/opt/privado-vpn-wireguard/docker-entrypoint.sh" --env-file $PWD/privado-vpn-wireguard/creds.env lscr.io/linuxserver/wireguard
 ```
